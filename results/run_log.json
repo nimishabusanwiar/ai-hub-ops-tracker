@@ -1,0 +1,197 @@
+{
+  "first_budget_flag_by_team": {
+    "Engineering": "2026-11-18"
+  },
+  "spend_drift_injected_from": "2026-11-10",
+  "cleaning": {
+    "rows_in": 11394,
+    "duplicates_removed": 331,
+    "bot_rows_removed": 40,
+    "unparsed_dates": 0,
+    "unparsed_costs": 0,
+    "team_missing": 546,
+    "team_unresolved": 0,
+    "rows_out": 11023
+  },
+  "low_adoption_flagged_with_weekly_metric": [],
+  "not_injected_but_flagged": [
+    {
+      "check": "human-only agent called automatically",
+      "agent": "contract-summary"
+    }
+  ],
+  "team_kpis": [
+    {
+      "index": "Data",
+      "headcount": 15,
+      "weekly_active_share_last_4w": 1.0,
+      "daily_active_share_last_4w": 0.81,
+      "spend_usd_rollout": 486.0,
+      "tasks_per_person_week_baseline": 9.77,
+      "tasks_per_person_week_rollout": 10.93,
+      "cost_per_active_user_month": 16.2,
+      "tasks_change_vs_baseline_pct": 11.9
+    },
+    {
+      "index": "Engineering",
+      "headcount": 30,
+      "weekly_active_share_last_4w": 1.0,
+      "daily_active_share_last_4w": 0.81,
+      "spend_usd_rollout": 1322.0,
+      "tasks_per_person_week_baseline": 11.35,
+      "tasks_per_person_week_rollout": 11.89,
+      "cost_per_active_user_month": 22.0,
+      "tasks_change_vs_baseline_pct": 4.8
+    },
+    {
+      "index": "Legal",
+      "headcount": 10,
+      "weekly_active_share_last_4w": 0.55,
+      "daily_active_share_last_4w": 0.16,
+      "spend_usd_rollout": 32.0,
+      "tasks_per_person_week_baseline": 10.18,
+      "tasks_per_person_week_rollout": 10.17,
+      "cost_per_active_user_month": 2.9,
+      "tasks_change_vs_baseline_pct": -0.1
+    },
+    {
+      "index": "Marketing",
+      "headcount": 20,
+      "weekly_active_share_last_4w": 0.99,
+      "daily_active_share_last_4w": 0.62,
+      "spend_usd_rollout": 324.0,
+      "tasks_per_person_week_baseline": 9.67,
+      "tasks_per_person_week_rollout": 10.25,
+      "cost_per_active_user_month": 8.2,
+      "tasks_change_vs_baseline_pct": 6.0
+    },
+    {
+      "index": "Operations",
+      "headcount": 20,
+      "weekly_active_share_last_4w": 0.99,
+      "daily_active_share_last_4w": 0.57,
+      "spend_usd_rollout": 273.0,
+      "tasks_per_person_week_baseline": 10.7,
+      "tasks_per_person_week_rollout": 11.16,
+      "cost_per_active_user_month": 6.9,
+      "tasks_change_vs_baseline_pct": 4.3
+    },
+    {
+      "index": "Sales",
+      "headcount": 25,
+      "weekly_active_share_last_4w": 0.99,
+      "daily_active_share_last_4w": 0.56,
+      "spend_usd_rollout": 363.0,
+      "tasks_per_person_week_baseline": 9.38,
+      "tasks_per_person_week_rollout": 9.91,
+      "cost_per_active_user_month": 7.3,
+      "tasks_change_vs_baseline_pct": 5.7
+    }
+  ],
+  "budget_as_of": "2026-11-20",
+  "budget": [
+    {
+      "team": "Sales",
+      "budget": 400,
+      "month_to_date": 148,
+      "projected_month_end": 224,
+      "projected_pct_of_budget": 56,
+      "flag": ""
+    },
+    {
+      "team": "Data",
+      "budget": 500,
+      "month_to_date": 196,
+      "projected_month_end": 298,
+      "projected_pct_of_budget": 60,
+      "flag": ""
+    },
+    {
+      "team": "Engineering",
+      "budget": 900,
+      "month_to_date": 686,
+      "projected_month_end": 1080,
+      "projected_pct_of_budget": 120,
+      "flag": "OVER"
+    },
+    {
+      "team": "Operations",
+      "budget": 300,
+      "month_to_date": 112,
+      "projected_month_end": 170,
+      "projected_pct_of_budget": 57,
+      "flag": ""
+    },
+    {
+      "team": "Legal",
+      "budget": 150,
+      "month_to_date": 17,
+      "projected_month_end": 26,
+      "projected_pct_of_budget": 17,
+      "flag": ""
+    },
+    {
+      "team": "Marketing",
+      "budget": 300,
+      "month_to_date": 131,
+      "projected_month_end": 195,
+      "projected_pct_of_budget": 65,
+      "flag": ""
+    }
+  ],
+  "governance_issues": [
+    {
+      "check": "agent not in registry",
+      "agent": "deploy-autofix",
+      "calls": 140
+    },
+    {
+      "check": "autonomous agent can write confidential data",
+      "agent": "invoice-bot",
+      "scopes": [
+        "client_contracts"
+      ]
+    },
+    {
+      "check": "human-only agent called automatically",
+      "agent": "contract-summary"
+    }
+  ],
+  "checks_vs_injected": {
+    "spend_drift": {
+      "expected": "Engineering",
+      "flagged": [
+        "Engineering"
+      ],
+      "caught": true,
+      "false_flags": []
+    },
+    "low_adoption": {
+      "expected": "Legal",
+      "flagged": [
+        "Legal"
+      ],
+      "caught": true,
+      "false_flags": []
+    },
+    "risky_agent": {
+      "expected": "invoice-bot",
+      "flagged": [
+        "invoice-bot"
+      ],
+      "caught": true,
+      "false_flags": []
+    },
+    "shadow_agent": {
+      "expected": "deploy-autofix",
+      "flagged": [
+        "deploy-autofix"
+      ],
+      "caught": true,
+      "false_flags": []
+    }
+  },
+  "caught": "4/4",
+  "false_flags": 0,
+  "note": "All data is synthetic. Before/after task counts are not a causal estimate (no control group)."
+}

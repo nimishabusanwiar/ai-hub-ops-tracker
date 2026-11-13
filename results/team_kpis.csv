@@ -1,0 +1,7 @@
+,headcount,weekly_active_share_last_4w,daily_active_share_last_4w,spend_usd_rollout,tasks_per_person_week_baseline,tasks_per_person_week_rollout,cost_per_active_user_month,tasks_change_vs_baseline_pct
+Data,15,1.0,0.81,486.0,9.77,10.93,16.2,11.9
+Engineering,30,1.0,0.81,1322.0,11.35,11.89,22.0,4.8
+Legal,10,0.55,0.16,32.0,10.18,10.17,2.9,-0.1
+Marketing,20,0.99,0.62,324.0,9.67,10.25,8.2,6.0
+Operations,20,0.99,0.57,273.0,10.7,11.16,6.9,4.3
+Sales,25,0.99,0.56,363.0,9.38,9.91,7.3,5.7
